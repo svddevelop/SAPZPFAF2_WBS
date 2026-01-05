@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SKTD" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <KTD_OBJECT>
+    <NAME>ZCS03_TEXT_TODO</NAME>
+    <TYPE>GENERAL_TEXT</TYPE>
+    <SOURCE_CONTENT_TYPE>02</SOURCE_CONTENT_TYPE>
+    <REF_OBJ_TYPE>DEVC</REF_OBJ_TYPE>
+    <REF_OBJ_NAME>ZPFAF2_WBS</REF_OBJ_NAME>
+    <ABAP_LANGUAGE_VERSION>X</ABAP_LANGUAGE_VERSION>
+    <CONTENT>
+     <item>
+      <NAME>ZCS03_TEXT_TODO</NAME>
+      <LANGU>D</LANGU>
+      <COMPONENT_UUID>whytk8NXH9C6zf+O2zRtFA==</COMPONENT_UUID>
+      <SOURCE_CONTENT>Ilk6XHRtcFxTQVBcZG9jc1xBQkFQXEZhbGxzdHVkaWVcVGVhbTMtQ2FzZVN0dWR5MDMuZG9jeCIK
+CgpvayBaQ1MwM19DVVNUT01FUg==</SOURCE_CONTENT>
+     </item>
+    </CONTENT>
+   </KTD_OBJECT>
+  </asx:values>
+ </asx:abap>
+</abapGit>
