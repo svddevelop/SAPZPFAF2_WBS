@@ -1,14 +1,24 @@
-class ZCL_TEST2 definition
-  public
-  final
-  create public .
+CLASS zcl_test2 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+
+    INTERFACES if_oo_adt_classrun .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZCL_TEST2 IMPLEMENTATION.
+CLASS zcl_test2 IMPLEMENTATION.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+        lcl_test2=>fill_customers( out ).
+
+
+  ENDMETHOD.
 ENDCLASS.

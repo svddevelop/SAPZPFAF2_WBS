@@ -1,0 +1,14 @@
+managed implementation in class zbp_r_cs03_customers unique;
+strict ( 2 );
+
+define behavior for ZR_CS03_CUSTOMERS //alias <alias_name>
+persistent table zcs03_customers
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) Customerid;
+}
