@@ -1,0 +1,57 @@
+managed implementation in class ZBP_R_CS03_CUSTOMERS001 unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_CS03_CUSTOMERS001 alias ZrCs03Customers001
+persistent table ZCS03_CUSTOMERS
+extensible
+draft table ZCS03_CSTMR000_D
+etag master Locallastchangedat
+lock master total etag Locallastchangedat
+authorization master( global )
+{
+  field ( mandatory : create )
+   Customerid;
+
+  field ( readonly )
+   Localcreatedby,
+   Localcreatedat,
+   Locallastchangedby,
+   Locallastchangedat;
+
+  field ( readonly : update )
+   Customerid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ZCS03_CUSTOMERS corresponding extensible
+  {
+    Customerid = customerid;
+    Salutation = salutation;
+    LastName = last_name;
+    FirstName = first_name;
+    Company = company;
+    Street = street;
+    City = city;
+    Country = country;
+    Postcode = postcode;
+    LastDate = last_date;
+    SalesVolume = sales_volume;
+    Currency = currency;
+    Language = language;
+    Localcreatedby = localcreatedby;
+    Localcreatedat = localcreatedat;
+    Locallastchangedby = locallastchangedby;
+    Locallastchangedat = locallastchangedat;
+  }
+
+}
