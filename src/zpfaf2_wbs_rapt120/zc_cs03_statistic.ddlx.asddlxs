@@ -1,9 +1,9 @@
 @Metadata.layer: #CORE
 @UI.headerInfo.title.type: #STANDARD
-@UI.headerInfo.title.value: 'Customerid'
+@UI.headerInfo.title.value: 'ID'
 @UI.headerInfo.description.type: #STANDARD
-@UI.headerInfo.description.value: 'Customerid'
-annotate view ZC_CS03_CUSTOMERS with
+@UI.headerInfo.description.value: 'ID'
+annotate view ZC_CS03_STATISTIC with
 {
   @UI.facet: [ {
     label: 'Allgemeine Informationen', 
@@ -21,7 +21,7 @@ annotate view ZC_CS03_CUSTOMERS with
   @UI.selectionField: [ {
     position: 10 
   } ]
-  Customerid;
+  ID;
   
   @UI.identification: [ {
     position: 20 
@@ -32,7 +32,7 @@ annotate view ZC_CS03_CUSTOMERS with
   @UI.selectionField: [ {
     position: 20 
   } ]
-  Salutation;
+  Interface;
   
   @UI.identification: [ {
     position: 30 
@@ -43,7 +43,7 @@ annotate view ZC_CS03_CUSTOMERS with
   @UI.selectionField: [ {
     position: 30 
   } ]
-  LastName;
+  Class;
   
   @UI.identification: [ {
     position: 40 
@@ -54,7 +54,7 @@ annotate view ZC_CS03_CUSTOMERS with
   @UI.selectionField: [ {
     position: 40 
   } ]
-  FirstName;
+  Active;
   
   @UI.identification: [ {
     position: 50 
@@ -64,141 +64,64 @@ annotate view ZC_CS03_CUSTOMERS with
   } ]
   @UI.selectionField: [ {
     position: 50 
-  } ]
-  Company;
-  
-  @UI.identification: [ {
-    position: 60 
-  } ]
-  @UI.lineItem: [ {
-    position: 60 
-  } ]
-  @UI.selectionField: [ {
-    position: 60 
-  } ]
-  Street;
-  
-  @UI.identification: [ {
-    position: 70 
-  } ]
-  @UI.lineItem: [ {
-    position: 70 
-  } ]
-  @UI.selectionField: [ {
-    position: 70 
-  } ]
-  City;
-  
-  @UI.identification: [ {
-    position: 80 
-  } ]
-  @UI.lineItem: [ {
-    position: 80 
-  } ]
-  @UI.selectionField: [ {
-    position: 80 
-  } ]
-  Country;
-  
-  @UI.identification: [ {
-    position: 90 
-  } ]
-  @UI.lineItem: [ {
-    position: 90 
-  } ]
-  @UI.selectionField: [ {
-    position: 90 
-  } ]
-  Postcode;
-  
-  @UI.identification: [ {
-    position: 100 
-  } ]
-  @UI.lineItem: [ {
-    position: 100 
-  } ]
-  @UI.selectionField: [ {
-    position: 100 
-  } ]
-  LastDate;
-  
-  @UI.identification: [ {
-    position: 110 
-  } ]
-  @UI.lineItem: [ {
-    position: 110 
-  } ]
-  @UI.selectionField: [ {
-    position: 110 
-  } ]
-  SalesVolume;
-  
-  @UI.identification: [ {
-    position: 120 
-  } ]
-  @UI.lineItem: [ {
-    position: 120 
-  } ]
-  @UI.selectionField: [ {
-    position: 120 
-  } ]
-  Language;
-  
-  @UI.identification: [ {
-    position: 130 
-  } ]
-  @UI.lineItem: [ {
-    position: 130 
-  } ]
-  @UI.selectionField: [ {
-    position: 130 
   } ]
   Localcreatedby;
   
   @UI.identification: [ {
-    position: 140 
+    position: 60 
   } ]
   @UI.lineItem: [ {
-    position: 140 
+    position: 60 
   } ]
   @UI.selectionField: [ {
-    position: 140 
+    position: 60 
   } ]
   Localcreatedat;
   
   @UI.identification: [ {
-    position: 150 
+    position: 70 
   } ]
   @UI.lineItem: [ {
-    position: 150 
+    position: 70 
   } ]
   @UI.selectionField: [ {
-    position: 150 
+    position: 70 
   } ]
   Locallastchangedby;
   
   @UI.identification: [ {
-    position: 160 
+    position: 80 
   } ]
   @UI.lineItem: [ {
-    position: 160 
+    position: 80 
   } ]
   @UI.selectionField: [ {
-    position: 160 
+    position: 80 
   } ]
   Locallastchangedat;
   
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  Lastchangedat;
+  
   @EndUserText.label: '_BaseEntity'
   @UI.identification: [ {
-    position: 170 , 
+    position: 100 , 
     label: '_BaseEntity'
   } ]
   @UI.lineItem: [ {
-    position: 170 , 
+    position: 100 , 
     label: '_BaseEntity'
   } ]
   @UI.selectionField: [ {
-    position: 170 
+    position: 100 
   } ]
   _BaseEntity;
 }

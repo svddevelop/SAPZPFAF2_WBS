@@ -33,6 +33,8 @@ authorization master( global )
   draft action Resume;
   draft determine action Prepare;
 
+  action ShowStat result[1] $self;
+
   mapping for ZCS03_CUSTOMERS corresponding extensible
   {
     Customerid = customerid;
