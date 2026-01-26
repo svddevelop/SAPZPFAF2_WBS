@@ -23,9 +23,12 @@ authorization master( global )
    Customerid;
 
 
+
   create;
   update;
   delete;
+
+  determination CustomerId on save { create; }
 
   draft action Activate optimized;
   draft action Discard;
@@ -33,7 +36,12 @@ authorization master( global )
   draft action Resume;
   draft determine action Prepare;
 
-  action ShowStat result[1] $self;
+  action (features : instance) ShowStat1
+
+        ;
+
+  action ShowStat2 result [1] $self
+        ;
 
   mapping for ZCS03_CUSTOMERS corresponding extensible
   {

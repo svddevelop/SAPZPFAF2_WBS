@@ -24,6 +24,13 @@ define root view entity ZR_CS03_CUSTOMERS001
   } ]
   currency as Currency,
   language as Language,
+  
+  //@UI.hidden:true
+  //cast( 'X' as abap_boolean) as IsShowAction1,
+  
+  //@UI.hidden: true
+  //cast('X' as abap_boolean) as IsShowAction2,
+  
   @Semantics.user.createdBy: true
   localcreatedby as Localcreatedby,
   @Semantics.systemDateTime.createdAt: true

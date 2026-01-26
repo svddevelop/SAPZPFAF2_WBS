@@ -5,6 +5,15 @@
 @UI.headerInfo.description.value: 'Customerid'
 annotate view ZC_CS03_CUSTOMERS002 with
 {
+@UI.lineItem: [
+    { type: #FOR_ACTION, dataAction: 'ShowStat' , label: 'Show Stat1'},
+    { type: #FOR_ACTION, dataAction: 'ShowStat2' , label: 'Show Statistic2'}
+ ]
+ Locallastchangedat;
+
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
   @UI.facet: [ {
     label: 'Allgemeine Informationen', 
     id: 'GeneralInfo', 
@@ -15,13 +24,12 @@ annotate view ZC_CS03_CUSTOMERS002 with
   @UI.identification: [ {
     position: 10 
   } ]
-  @UI.lineItem: [ {
-    position: 10 
-  } ]
   @UI.selectionField: [ {
     position: 10 
   } ]
   Customerid;
+  
+  
   
   @UI.identification: [ {
     position: 20 
@@ -100,6 +108,7 @@ annotate view ZC_CS03_CUSTOMERS002 with
   } ]
   Country;
   
+  
   @UI.identification: [ {
     position: 90 
   } ]
@@ -109,6 +118,7 @@ annotate view ZC_CS03_CUSTOMERS002 with
   @UI.selectionField: [ {
     position: 90 
   } ]
+  
   Postcode;
   
   @UI.identification: [ {
@@ -142,7 +152,8 @@ annotate view ZC_CS03_CUSTOMERS002 with
   @UI.selectionField: [ {
     position: 120 
   } ]
-  Language;
+  Language;  
+  
   
   @UI.identification: [ {
     position: 130 
@@ -153,6 +164,7 @@ annotate view ZC_CS03_CUSTOMERS002 with
   @UI.selectionField: [ {
     position: 130 
   } ]
+  
   Localcreatedby;
   
   @UI.identification: [ {
@@ -166,27 +178,54 @@ annotate view ZC_CS03_CUSTOMERS002 with
   } ]
   Localcreatedat;
   
-  @UI.identification: [ {
-    position: 150 
-  } ]
-  @UI.lineItem: [ {
-    position: 150 
-  } ]
-  @UI.selectionField: [ {
-    position: 150 
-  } ]
-  Locallastchangedby;
+//  @UI.identification: [ {
+//    position: 150 
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 150 
+//  } ]
+//  @UI.selectionField: [ {
+//    position: 150 
+//  } ]
+//  Locallastchangedby;
   
-  @UI.identification: [ {
-    position: 160 
-  } ]
-  @UI.lineItem: [ {
-    position: 160 
-  } ]
-  @UI.selectionField: [ {
-    position: 160 
-  } ]
-  Locallastchangedat;
+//  @UI.identification: [ {
+//    position: 160 
+//  } ]
+//  @UI.lineItem: [ {
+//    position: 160 
+//  } ]
+//  @UI.selectionField: [ {
+//    position: 160 
+//  } ]
+
+ 
+ /* 
+ @UI.lineItem: [
+    { type: #FOR_ACTION, dataAction: 'ShowStat' , label: 'Show Stat1'}
+ ]
+ Locallastchangedat;
+ 
+ @UI.lineItem: [
+ 
+    { type: #FOR_ACTION, dataAction: 'ShowStat2' , label: 'Show Statistic2'}
+ ]
+ Locallastchangedby;
+ */
+
+  //@UI.selectionField: [{ position: 1 }]
+  //@UI.textArrangement: #TEXT_ONLY
+  //@UI.dataPoint: { qualifier: 'StatusData1', title: 'Status1' }  
+  // Locallastchangedat;
+
+  
+ //@UI.lineItem: [{ position: 201 },
+ //                { type: #FOR_ACTION, dataAction: 'ShowStat2' , label: 'Show Statistic2'}]
+  //@UI.selectionField: [{ position: 200 }]
+  //@UI.textArrangement: #TEXT_ONLY
+  //@UI.dataPoint: { qualifier: 'StatusData2', title: 'Status2' }   
+//   Locallastchangedby;
+
   
   @EndUserText.label: '_BaseEntity'
   @UI.identification: [ {
@@ -201,4 +240,6 @@ annotate view ZC_CS03_CUSTOMERS002 with
     position: 170 
   } ]
   _BaseEntity;
+  
+  
 }

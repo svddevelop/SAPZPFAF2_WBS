@@ -1,0 +1,24 @@
+projection implementation in class ZBP_C_CS03_CUSTOMERS001 unique;
+strict ( 2 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZC_CS03_CUSTOMERS002 alias ZcCs03Customers002
+extensible
+use etag
+{
+  use create;
+  use update;
+  use delete;
+  //field ( readonly:update ) Customerid;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+  use action ShowStat1;
+  use action ShowStat2;
+
+}
