@@ -36,11 +36,11 @@ authorization master( global )
   draft action Resume;
   draft determine action Prepare;
 
-  action (features : instance) ShowStat1
+  action (features : instance) ShowStat1 result [1] $self
 
         ;
 
-  action ShowStat2 result [1] $self
+  action (features : instance) ShowStat2 result [1] $self
         ;
 
   mapping for ZCS03_CUSTOMERS corresponding extensible

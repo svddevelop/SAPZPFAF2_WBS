@@ -6,7 +6,7 @@
 annotate view ZC_CS03_CUSTOMERS002 with
 {
 @UI.lineItem: [
-    { type: #FOR_ACTION, dataAction: 'ShowStat' , label: 'Show Stat1'},
+    { type: #FOR_ACTION, dataAction: 'ShowStat1' , label: 'Show Stat1'},
     { type: #FOR_ACTION, dataAction: 'ShowStat2' , label: 'Show Statistic2'}
  ]
  Locallastchangedat;
